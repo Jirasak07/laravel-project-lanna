@@ -17,8 +17,9 @@ class CreateBookingsTable extends Migration
             $table->id();
             $table->date('booking_start');
             $table->date('booking_end');
+            $table->string('booking_carid');
             $table->string('user');
-            $table->string('driver_book');
+            $table->string('driver_book')->nullable();
             $table->integer('type_car');
             $table->integer('booking_status');
             $table->timestamps();
