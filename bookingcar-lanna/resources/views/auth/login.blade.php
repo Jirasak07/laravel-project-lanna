@@ -29,7 +29,7 @@
                     </span>
 
                     <span class="login100-form-title p-b-34 p-t-27">
-                        Log in
+                        เข้าสู่ระบบ
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter username">
@@ -50,14 +50,10 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <input type="submit" name="submit" value="Login" style="color: #fff" class="login100-form-btn">
+                        <input type="submit" name="submit" value="เข้าสู่ระบบ" style="color: #fff" class="login100-form-btn">
                     </div>
 
-                    <div class="text-center p-t-90">
-                        <a class="txt1" href="#">
-                            Forgot Password?
-                        </a>
-                    </div>
+
                 </form>
             </div>
         </div>
