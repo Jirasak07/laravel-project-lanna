@@ -25,9 +25,9 @@
                     <div class="col-xl-12 box-col-12 xl-100">
                         <div class="row">
                             <div class="col-12 xl-50">
-                                <div class="card card-with-border welcome-card o-hidden">
+                                {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
                                   @include('user.calendar.index')
-                                </div>
+                               {{--  </div> --}}
                             </div>
                         </div>
                     </div>
