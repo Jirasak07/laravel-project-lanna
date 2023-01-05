@@ -7,7 +7,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/icon type">
+    
     <title>{{ config('app.name', 'booking') }}</title>
 
     <!-- Scripts -->
@@ -52,7 +53,7 @@
                                 </li>
                             @endif
 
-                           {{--  @if (Route::has('register'))
+                            {{--  @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
