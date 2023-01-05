@@ -5,25 +5,22 @@
     }
 </style>
 <div class="container-fluid">
+    <br />
+    <h3 style="font-size: 30px" class="fw-bold" align="center">
+        เลือกวันเวลาที่ต้องการทำการจอง
+    </h3>
+    <br />
     <div id='calendar'></div>
 </div>
 <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
 
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.2/index.global.min.js'></script>
 <script>
-    /* document.addEventListener('DOMContentLoaded', function() {
-        /* var calendarEl = document.getElementById('calendar');
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
-            headerToolbar: {
-                start: 'dayGridMonth,timeGridWeek,timeGridDay',
-                center: 'title',
-                end: 'prevYear,prev,next,nextYear'
-            },
-        }); 
-        var calendarEl = document.getElementById('calendar');
-        var date = new Date();
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+            selectable: true,
             timeZone: 'Asia/bangkok',
             locale: 'th',
             initialView: 'timeGridWeek',
@@ -33,50 +30,31 @@
                 day: 'numeric',
                 weekday: 'long',
                 hour12: 'false',
+                css: 'font-size:20px'
             },
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
                 right: 'timeGridDay timeGridWeek dayGridMonth'
             },
-            
-            /* validRange: function(nowDate) {
+
+            validRange: function(nowDate) {
                 return {
                     start: nowDate
                 };
-            }, */
-
-    /* views: {
-                timeGridFourDay: {
-                    type: 'timeGrid',
-                    duration: {
-                        days: 7
-                    },
-                    buttonText: '7 day'
-                }
-            }, 
-            //events: 'https://fullcalendar.io/api/demo-feeds/events.json' 
-        });
-        calendar.render();
-    }); */
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            selectable: true,
-            initialView: 'timeGridWeek',
-            headerToolbar: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'timeGridDay timeGridWeek dayGridMonth'
             },
-            
+
             dateClick: function(info) {
-                alert('clicked ' + info.dateStr);
+                Swal.fire({
+                    icon: 'question',
+                    text: 'clicked ' + info.dateStr
+                });
             },
             select: function(info) {
-                alert('selected ' + info.startStr + ' to ' + info.endStr);
+                Swal.fire({
+                    icon:'question',
+                    text:'selected ' + info.startStr + ' to ' + info.endStr
+                });
             }
         });
 
