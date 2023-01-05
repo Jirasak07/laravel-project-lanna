@@ -5,14 +5,12 @@
             <div id="mainnav">
                 <ul class="nav-menu custom-scrollbar">
                     <li class="back-btn">
-                        <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2"
-                                aria-hidden="true"></i></div>
+                        <div class="mobile-back text-right"><span>Back</span></div>
                     </li>
                     <li>
                         <a class="nav-link menu-title {{ request()->route()->getPrefix() == '/dashboard'? 'active': '' }}"
                             href="#"><i data-feather="home"></i><span>Dashboard</span>
-                            <div class="according-menu">
-                            </div>
+                            
                         </a>
                     </li>
                     <li class="dropdown">
