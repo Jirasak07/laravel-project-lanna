@@ -9,13 +9,13 @@
                     </li>
                     <li>
                         <a class="nav-link menu-title {{ request()->route()->getPrefix() == '/dashboard'? 'active': '' }}"
-                            href="#"><i data-feather="home"></i><span>Dashboard</span>
+                            href="#"><i data-feather="home"></i><span>หน้าหลัก</span>
                             
                         </a>
                     </li>
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ request()->route()->getPrefix() == '/widgets'? 'active': '' }}"
-                            href="#"><i data-feather="airplay"></i><span>Widgets</span>
+                            href="#"><i data-feather="book"></i><span>การจอง</span>
                             <div class="according-menu"><i
                                     class="fa fa-angle-double-{{ request()->route()->getPrefix() == '/widgets'? 'down': 'right' }}"></i>
                             </div>
@@ -23,10 +23,10 @@
                         <ul class="nav-submenu menu-content"
                             style="display: {{ request()->route()->getPrefix() == '/widgets'? 'block;': 'none' }}">
                             <li><a href=""
-                                    class="{{ Route::currentRouteName() == 'general-widget' ? 'active' : '' }}">General</a>
+                                    class="{{ Route::currentRouteName() == 'general-widget' ? 'active' : '' }}">สถานะการจอง</a>
                             </li>
                             <li><a href=""
-                                    class="{{ Route::currentRouteName() == 'chart-widget' ? 'active' : '' }}">Chart</a>
+                                    class="{{ Route::currentRouteName() == 'chart-widget' ? 'active' : '' }}">ประวิตการจอง</a>
                             </li>
                         </ul>
                     </li>
