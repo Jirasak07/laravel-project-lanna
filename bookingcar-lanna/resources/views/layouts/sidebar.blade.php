@@ -25,7 +25,7 @@
                             <li><a href="{{ route('user-booking-status') }}"
                                     class="{{ Route::currentRouteName() == 'general-widget' ? 'active' : '' }}">สถานะการจอง</a>
                             </li>
-                            <li><a href=""
+                            <li><a href="{{ route('user-history') }}"
                                     class="{{ Route::currentRouteName() == 'chart-widget' ? 'active' : '' }}">ประวัติการจอง</a>
                             </li>
                         </ul>
