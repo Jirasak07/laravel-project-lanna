@@ -12,4 +12,8 @@ class UserController extends Controller
     public function viewBookingStatus(){
         return view('user.booking-status');
     }
+
+    public function viewHistory(){
+        return view('user.history-booking');
+    }
 }
