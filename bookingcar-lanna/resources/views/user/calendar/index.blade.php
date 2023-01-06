@@ -60,32 +60,17 @@
                 $('#bookingModal').modal('toggle');
                 document.getElementById('booking_start').innerHTML = booking_start;
                 document.getElementById('booking_end').innerHTML = booking_end;
-                var ty_car1 = document.getElementById('type_car1');
-                var driver_book = document.getElementById('driver_book');
 
                 /* if (ty_car1.checked == true) {
                     console.log(ty_car1.value);
                     fill_driver.style.display = "none";
                 } */
-                $('#type_car1').click(function() {
-                    var fill_driver = document.getElementById('fill_driver');
-                    fill_driver.style.display = "none";
-                });
-                $('#type_car2').click(function() {
-                    var fill_driver = document.getElementById('fill_driver');
-                    fill_driver.style.display = "";
-                });
+                
                 $('#saveBooking').click(function() {
                     var booking_start = info.startStr;
                     var booking_end = info.endStr;
                     var name = $('#name').val();
-                    var type_car = "";
-                    if (ty_car1.checked == true) {
-                        type_car = ty_car1.value;
-                    } else {
-                        type_car = $('#type_car2').val();
-                    }
-                    console.log(type_car);
+                    
                 });
                 /* Swal.fire({
                     icon: 'question',
@@ -116,38 +101,13 @@
                         <label for="inputPassword4" class="form-label">วันเดินทางกลับ</label>
                         <label class="form-control-plaintext" id="booking_end" name="booking_end"></label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <input type="text" class="form-control" id="name" name="name"
                             placeholder="ชื่อผู้จอง">
                     </div>
-                    <div class=" col-md-6">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_car" id="type_car2" value="1"
-                                checked>
-                            <label class="form-check-label" for="type_car2">รถภายในบริษัท</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_car" id="type_car1"
-                                value="2">
-                            <label class="form-check-label" for="type_car1">รถภายนอกบริษัท</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6" id="fill_driver">
-                        <select class="form-select" name="driver_book" id="driver_book"
-                            aria-label="Default select example">
-                            <option selected>--เลือกคนขับรถ--</option>
-                            <option value="1">One</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <select class="form-select" name="booking_carid" id="booking_carid"
-                            aria-label="Default select example">
-                            <option selected>--เลือกรถที่ใช้ในการเดินทาง--</option>
-                            <option value="1">One</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-
+                    <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label">ระบุสถานที่</label>
+                        <input type="text" name="location" id="location" class=" form-control">
                     </div>
                 </div>
             </div>
