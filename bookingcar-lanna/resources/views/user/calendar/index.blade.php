@@ -19,6 +19,7 @@
             locale: 'th',
             initialView: 'timeGridWeek',
             allDaySlot: false,
+            nowIndicator: true,
             titleFormat: {
                 month: 'long',
                 year: 'numeric',
@@ -30,7 +31,16 @@
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
-                right: 'timeGridDay timeGridWeek dayGridMonth'
+                right: 'timeGridDay timeGridFourDay timeGridWeek dayGridMonth'
+            },
+            views: {
+                timeGridFourDay: {
+                    type: 'timeGrid',
+                    duration: {
+                        days: 7
+                    },
+                    buttonText: '7 day'
+                }
             },
             validRange: function(nowDate) {
                 return {
@@ -38,10 +48,10 @@
                 };
             },
             dateClick: function(info) {
-                Swal.fire({
+                /* Swal.fire({
                     icon: 'question',
                     text: 'clicked ' + info.dateStr
-                });
+                }); */
             },
             select: function(info) {
                 var booking_start = moment(info.startStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
@@ -111,8 +121,8 @@
                     </div>
                     <div class=" col-md-6">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_car" id="type_car2"
-                                value="1" checked>
+                            <input class="form-check-input" type="radio" name="type_car" id="type_car2" value="1"
+                                checked>
                             <label class="form-check-label" for="type_car2">รถภายในบริษัท</label>
                         </div>
                         <div class="form-check form-check-inline">
