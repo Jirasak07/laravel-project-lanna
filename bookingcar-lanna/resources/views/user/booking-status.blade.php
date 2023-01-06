@@ -16,7 +16,6 @@
 @section('breadcrumb-title')
     <h3>สถานะการจอง</h3>
 @endsection
-
 @section('content')
     <div class="container-fluid">
         <div class="row">
@@ -26,7 +25,7 @@
                         <div class="row">
                             <div class="col-12 xl-50">
                                 {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
-                                  
+
                                {{--  </div> --}}
                             </div>
                         </div>
