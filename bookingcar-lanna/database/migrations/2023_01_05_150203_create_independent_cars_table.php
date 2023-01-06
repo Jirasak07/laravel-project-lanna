@@ -14,7 +14,7 @@ class CreateIndependentCarsTable extends Migration
     public function up()
     {
         Schema::create('independent_cars', function (Blueprint $table) {
-            $table->id();
+            $table->id('inde_cid');
             $table->string('inde_brand');
             $table->string('inde_license_palate');
             $table->string('inde_driver');
