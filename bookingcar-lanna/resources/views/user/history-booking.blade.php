@@ -25,9 +25,26 @@
                     <div class="col-xl-12 box-col-12 xl-100">
                         <div class="row">
                             <div class="col-12 xl-50">
-                                {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
-                               
-                                {{--  </div> --}}
+                                <div class="card card-with-border welcome-card o-hidden">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ลำดับ</th>
+                                                <th scope="col">วันที่เดินทาง</th>
+                                                <th scope="col">วันที่กลับ</th>
+                                                <th scope="col">รายละเอียดการจอง</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

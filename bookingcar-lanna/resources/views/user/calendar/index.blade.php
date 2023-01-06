@@ -17,7 +17,7 @@
             selectable: true,
             timeZone: 'Asia/bangkok',
             locale: 'th',
-            initialView: 'timeGridWeek',
+            initialView: 'timeGridFourDay',
             allDaySlot: false,
             nowIndicator: true,
             titleFormat: {
@@ -31,7 +31,7 @@
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
-                right: 'timeGridDay,timeGridFourDay,timeGridWeek,dayGridMonth,listMonth'
+                right: 'timeGridDay,timeGridFourDay,dayGridMonth,listMonth'
             },
             // events: 'https://fullcalendar.io/api/demo-feeds/events.json',
             views: {

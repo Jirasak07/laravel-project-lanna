@@ -33,7 +33,7 @@
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username" placeholder="Username" value="{{ old('email') }}">
+                        <input class="input100" type="text" name="username" placeholder="Email" value="{{ old('email') }}">
                         <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
 
