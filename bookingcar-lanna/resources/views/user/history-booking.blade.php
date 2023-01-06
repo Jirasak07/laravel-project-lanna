@@ -14,7 +14,7 @@
 @endsection
 
 @section('breadcrumb-title')
-    <h3>ประวัติการจอง</h3>
+    <h3>ประวิติการจอง</h3>
 @endsection
 
 @section('content')
