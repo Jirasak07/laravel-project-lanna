@@ -11,8 +11,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+             var calendar = new FullCalendar.Calendar(calendarEl, {
 
             selectable: true,
             timeZone: 'Asia/bangkok',
@@ -55,12 +54,12 @@
                 }); */
             },
             select: function(info) {
-                var booking_start = moment(info.startStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
+                var booking_start = moment(info.startStr).format('YYYY-MM-DD');
                 var booking_end = moment(info.endStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
                 $('#bookingModal').modal('toggle');
                 document.getElementById('booking_start').innerHTML = booking_start;
                 document.getElementById('booking_end').innerHTML = booking_end;
-
+                document.getElementById('date_start').value = booking_start;   
                 /* if (ty_car1.checked == true) {
                     console.log(ty_car1.value);
                     fill_driver.style.display = "none";
@@ -97,6 +96,7 @@
                         <label for="staticEmail" class="col-sm-2 col-form-label">วันเดินทางไป</label>
                         <div class="col-sm-10">
                             <label class="form-control-plaintext" id="booking_start" name="booking_start"></label>
+                            <input type="date" data-date="" data-date-format="DD MM YYYY" id="date_start"  >
                         </div>
                     </div>
                     <div class="row">
