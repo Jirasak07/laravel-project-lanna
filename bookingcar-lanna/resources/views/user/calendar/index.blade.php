@@ -13,6 +13,7 @@
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
+
             selectable: true,
             timeZone: 'Asia/bangkok',
             locale: 'th',
@@ -22,7 +23,7 @@
                 month: 'long',
                 year: 'numeric',
                 day: 'numeric',
-                weekday: 'long',
+                //weekday: 'long',
                 hour12: 'false',
                 css: 'font-size:20px'
             },
@@ -43,8 +44,8 @@
                 });
             },
             select: function(info) {
-                var booking_start = info.startStr;
-                var booking_end = info.endStr;
+                var booking_start = moment(info.startStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
+                var booking_end = moment(info.endStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
                 $('#bookingModal').modal('toggle');
                 document.getElementById('booking_start').innerHTML = booking_start;
                 document.getElementById('booking_end').innerHTML = booking_end;
@@ -110,14 +111,14 @@
                     </div>
                     <div class=" col-md-6">
                         <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="type_car" id="type_car2"
+                                value="1" checked>
+                            <label class="form-check-label" for="type_car2">รถภายในบริษัท</label>
+                        </div>
+                        <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="type_car" id="type_car1"
                                 value="2">
                             <label class="form-check-label" for="type_car1">รถภายนอกบริษัท</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_car" id="type_car2"
-                                value="1">
-                            <label class="form-check-label" for="type_car2">รถภายในบริษัท</label>
                         </div>
                     </div>
                     <div class="col-md-6" id="fill_driver">
