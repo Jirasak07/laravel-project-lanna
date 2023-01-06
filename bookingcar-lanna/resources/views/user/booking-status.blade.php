@@ -25,17 +25,29 @@
                         <div class="row">
                             <div class="col-12 xl-50">
                                 {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
-                                <table class="table  table-hover text-white">
-                                    <thead class="text-white">
+                                <table class="table  table-hover text-white table-bordered">
+                                    <thead align="center">
                                         <tr>
-                                            <td>1</td>
-                                            <td>#</td>
-                                            <td>#</td>
-                                            <td>#</td>
-                                            <td>#</td>
-                                            <td>#</td>
+                                            <th >ลำดับ</th>
+                                            <th >วันที่เดินทาง</th>
+                                            <th >วันที่กลับ</th>
+                                            <th >สถานที่</th>
+                                            <th >สถานะ</th>
+                                            <th class="col-2 ">จัดการ</th>
                                         </tr>
                                     </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th ></th>
+                                            <th ></th>
+                                            <th ></th>
+                                            <th ></th>
+                                            <th></th>
+                                            <th class="text-center" >
+                                                <div class="btn btn-danger">ยกเลิกการจอง</div>
+                                            </th>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 {{--  </div> --}}
                             </div>

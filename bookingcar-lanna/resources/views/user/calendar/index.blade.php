@@ -10,8 +10,9 @@
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.2/index.global.min.js'></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
 
+
+        var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
 
             selectable: true,
@@ -55,11 +56,17 @@
                 }); */
             },
             select: function(info) {
+
+                FG(moment(info.startStr).format('dddd, MMMM Do YYYY, h:mm:ss a'))
                 var booking_start = moment(info.startStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
                 var booking_end = moment(info.endStr).format('dddd, MMMM Do YYYY, h:mm:ss a');
                 $('#bookingModal').modal('toggle');
                 document.getElementById('booking_start').innerHTML = booking_start;
                 document.getElementById('booking_end').innerHTML = booking_end;
+                document.getElementById('booking').innerHTML = booking_start;
+                document.getElementById('field_name').value = 'value';
+                document.getElementById('name').value = booking_start;
+
 
                 /* if (ty_car1.checked == true) {
                     console.log(ty_car1.value);
@@ -81,6 +88,10 @@
 
         calendar.render();
     });
+    function FG(val1){
+        // document.getElementById('name').value = val1;
+        alert(val1)
+    }
 </script>
 
 <div class="modal fade" id="bookingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -97,6 +108,9 @@
                         <label for="staticEmail" class="col-sm-2 col-form-label">วันเดินทางไป</label>
                         <div class="col-sm-10">
                             <label class="form-control-plaintext" id="booking_start" name="booking_start"></label>
+                            <input type="datetime-local" id="name" defaultValue="ggg">
+
+
                         </div>
                     </div>
                     <div class="row">
