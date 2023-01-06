@@ -22,11 +22,11 @@
                         </a>
                         <ul class="nav-submenu menu-content"
                             style="display: {{ request()->route()->getPrefix() == '/widgets'? 'block;': 'none' }}">
-                            <li><a href=""
+                            <li><a href="{{ route('user-booking-status') }}"
                                     class="{{ Route::currentRouteName() == 'general-widget' ? 'active' : '' }}">สถานะการจอง</a>
                             </li>
                             <li><a href=""
-                                    class="{{ Route::currentRouteName() == 'chart-widget' ? 'active' : '' }}">ประวิตการจอง</a>
+                                    class="{{ Route::currentRouteName() == 'chart-widget' ? 'active' : '' }}">ประวัติการจอง</a>
                             </li>
                         </ul>
                     </li>
