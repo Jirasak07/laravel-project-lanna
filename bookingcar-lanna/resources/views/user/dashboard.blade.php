@@ -1,5 +1,5 @@
 @extends('layouts.user')
-@section('title', 'Business Dashboard')
+@section('title', 'ระบบจองรถ')
 
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chartist.css') }}">
@@ -10,11 +10,11 @@
 @endsection
 
 @section('breadcrumb-items')
-    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item">หน้าหลัก</li>
 @endsection
 
 @section('breadcrumb-title')
-    <h3>Dashboard</h3>
+    <h3>หน้าหลัก</h3>
 @endsection
 
 @section('content')
@@ -25,9 +25,9 @@
                     <div class="col-xl-12 box-col-12 xl-100">
                         <div class="row">
                             <div class="col-12 xl-50">
-                                <div class="card card-with-border welcome-card o-hidden">
+                                {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
                                   @include('user.calendar.index')
-                                </div>
+                               {{--  </div> --}}
                             </div>
                         </div>
                     </div>
