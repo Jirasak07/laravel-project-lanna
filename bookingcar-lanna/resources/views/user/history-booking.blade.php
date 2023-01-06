@@ -27,7 +27,7 @@
                             <div class="col-12 xl-50">
                                 <div class="card card-with-border welcome-card o-hidden">
                                     <table class="table table-hover">
-                                        <thead>
+                                        <thead align="center">
                                             <tr>
                                                 <th scope="col">ลำดับ</th>
                                                 <th scope="col">วันที่เดินทาง</th>
@@ -35,12 +35,16 @@
                                                 <th scope="col">รายละเอียดการจอง</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody align="center">
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
+                                                <th>1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <a href="" class="btn" style="background-color: #FFB100">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

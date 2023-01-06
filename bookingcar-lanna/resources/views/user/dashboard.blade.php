@@ -37,7 +37,7 @@
     </div>
 @endsection
 
-@section('script')
+{{-- @section('script')
     <script src="{{ asset('assets/js/chart/chartist/chartist.js') }}"></script>
     <script src="{{ asset('assets/js/chart/chartist/chartist-plugin-tooltip.js') }}"></script>
     <script src="{{ asset('assets/js/chart/apex-chart/apex-chart.js') }}"></script>
@@ -51,4 +51,4 @@
     <script src="{{ asset('assets/js/notify/bootstrap-notify.min.js') }}"></script>
     <script src="{{ asset('assets/js/dashboard/default.js') }}"></script>
     <script src="{{ asset('assets/js/notify/index.js') }}"></script>
-@endsection
+@endsection --}}
