@@ -9,7 +9,7 @@
                     </li>
                     <li>
                         <a class="nav-link menu-title {{ request()->route()->getPrefix() == '/dashboard'? 'active': '' }}"
-                            href="{{ url('/') }}"><i data-feather="home"></i><span>หน้าหลัก</span>
+                            href="{{ route('user.dashboard') }}"><i data-feather="home"></i><span>หน้าหลัก</span>
 
                         </a>
                     </li>

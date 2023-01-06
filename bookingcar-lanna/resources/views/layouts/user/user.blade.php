@@ -28,7 +28,7 @@
         <!-- Page Body Start-->
         <div class="page-body-wrapper sidebar-icon">
             <nav-menus></nav-menus>
-            @include('layouts.sidebar')
+            @include('layouts.user.sidebar')
             <!-- Page Sidebar Ends-->
             <div class="page-body">
                 <div class="container-fluid">

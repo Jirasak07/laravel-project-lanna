@@ -21,5 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('users/dashboard',[\App\Http\Controllers\fontend\UserController::class,'index'])->name('user.dashboard');
 Route::get('users/booking-status', [App\Http\Controllers\fontend\UserController::class, 'viewBookingStatus'])->name('user-booking-status');
 Route::get('users/history-booking', [\App\Http\Controllers\fontend\UserController::class, 'viewHistory'])->name('user-history');
