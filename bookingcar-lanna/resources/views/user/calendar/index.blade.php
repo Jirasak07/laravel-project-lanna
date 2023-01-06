@@ -17,7 +17,7 @@
             selectable: true,
             timeZone: 'Asia/bangkok',
             locale: 'th',
-            initialView: 'timeGridWeek',
+            initialView: 'timeGridDay',
             allDaySlot: false,
             nowIndicator: true,
             titleFormat: {
