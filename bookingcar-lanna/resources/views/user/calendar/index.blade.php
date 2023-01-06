@@ -31,8 +31,9 @@
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
-                right: 'timeGridDay timeGridFourDay timeGridWeek dayGridMonth'
+                right: 'timeGridDay,timeGridFourDay,timeGridWeek,dayGridMonth,listMonth'
             },
+            // events: 'https://fullcalendar.io/api/demo-feeds/events.json',
             views: {
                 timeGridFourDay: {
                     type: 'timeGrid',
