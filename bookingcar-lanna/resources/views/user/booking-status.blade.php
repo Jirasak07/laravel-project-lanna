@@ -25,8 +25,19 @@
                         <div class="row">
                             <div class="col-12 xl-50">
                                 {{-- <div class="card card-with-border welcome-card o-hidden"> --}}
-
-                               {{--  </div> --}}
+                                <table class="table  table-hover text-white">
+                                    <thead class="text-white">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>#</td>
+                                            <td>#</td>
+                                            <td>#</td>
+                                            <td>#</td>
+                                            <td>#</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                {{--  </div> --}}
                             </div>
                         </div>
                     </div>
