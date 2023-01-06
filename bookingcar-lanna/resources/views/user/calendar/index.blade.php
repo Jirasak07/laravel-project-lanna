@@ -20,7 +20,7 @@
                 center: 'title',
                 end: 'prevYear,prev,next,nextYear'
             },
-        }); 
+        });
         var calendarEl = document.getElementById('calendar');
         var date = new Date();
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -39,7 +39,7 @@
                 center: 'title',
                 right: 'timeGridDay timeGridWeek dayGridMonth'
             },
-            
+
             /* validRange: function(nowDate) {
                 return {
                     start: nowDate
@@ -54,8 +54,8 @@
                     },
                     buttonText: '7 day'
                 }
-            }, 
-            //events: 'https://fullcalendar.io/api/demo-feeds/events.json' 
+            },
+            //events: 'https://fullcalendar.io/api/demo-feeds/events.json'
         });
         calendar.render();
     }); */
@@ -65,13 +65,14 @@
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
             selectable: true,
-            initialView: 'timeGridWeek',
+
+            initialView: 'dayGridMonth',
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
                 right: 'timeGridDay timeGridWeek dayGridMonth'
             },
-            
+
             dateClick: function(info) {
                 alert('clicked ' + info.dateStr);
             },
