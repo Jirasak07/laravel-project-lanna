@@ -16,8 +16,8 @@
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ request()->route()->getPrefix() == '/widgets'? 'active': '' }}"
                             href="#"><i data-feather="book"></i><span>การจอง</span>
-                            <div class="according-menu"><i
-                                    class="fa fa-angle-double-{{ request()->route()->getPrefix() == '/widgets'? 'down': 'right' }}"></i>
+                            <div class="according-menu">
+                                <i class="fa fa-angle-double-{{ request()->route()->getPrefix() == '/widgets'? 'down': 'right' }}"></i>
                             </div>
                         </a>
                         <ul class="nav-submenu menu-content"

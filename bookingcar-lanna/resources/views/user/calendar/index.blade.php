@@ -65,12 +65,12 @@
                     console.log(ty_car1.value);
                     fill_driver.style.display = "none";
                 } */
-                
+
                 $('#saveBooking').click(function() {
                     var booking_start = info.startStr;
                     var booking_end = info.endStr;
                     var name = $('#name').val();
-                    
+
                 });
                 /* Swal.fire({
                     icon: 'question',
@@ -93,13 +93,17 @@
             </div>
             <div class="modal-body">
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">วันเดินทางไป</label>
-                        <label class="form-control-plaintext" id="booking_start" name="booking_start"></label>
+                    <div class="row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">วันเดินทางไป</label>
+                        <div class="col-sm-10">
+                            <label class="form-control-plaintext" id="booking_start" name="booking_start"></label>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">วันเดินทางกลับ</label>
-                        <label class="form-control-plaintext" id="booking_end" name="booking_end"></label>
+                    <div class="row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">วันเดินทางกลับ</label>
+                        <div class="col-sm-10">
+                            <label class="form-control-plaintext" id="booking_end" name="booking_end"></label>
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <input type="text" class="form-control" id="name" name="name"
